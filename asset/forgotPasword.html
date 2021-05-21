@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- rubik -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+
+    <style>
+        .banner2{
+            background: url(/asset/img/banner2.png);
+            height: 900px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .banner2 .inputmail input{
+            width: 700px;
+            height: 100px;
+            border-radius: 15px;
+        }
+        .banner2 .inputmail button{
+            width: 200px;
+            height: 100px;
+            border-radius: 15px;
+        }
+        .btn.choco{
+            width: 450px;
+            height: 100px;
+            border-radius: 15px;
+        }
+        .btn.trans{
+            width: 550px;
+            height: 90px;
+        }
+    </style>
+    <title>Forgot Password</title>
+
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+    <div class="banner2 text-white flex flex-col justify-start items-center text-center space-y-24 pt-36">
+        <div class="forgotpas tracking-wider">
+            <div class="text-6xl font-bold">Forgot your password?</div>
+            <div class="text-2xl font-bold">Don’t worry, we got your back!</div>
+        </div>
+        <div class="inputmail flex flex-row">
+            <input class=" mr-10 pl-8 text-xl" type="text" placeholder="Enter your email adress to get link">
+            <button class=" bg-yellow-400 text-xl font-bold text-yellow-900">Send</button>
+        </div>
+        <div class="flex flex-col justify-center items-center text-center space-y-6 ">
+            <div class="btn trans text-3xl font-medium">Click here if you didn’t receive any link in 2 minutes</div>
+            <div class="btn choco bg-yellow-900 w-96 flex justify-center items-center "><button class="text-2xl font-bold">Resend Link</button></div>
+            <div class="text-3xl font-medium">01:54</div>
+        </div>
+        <div class="resendlink">
+
+        </div>
+    </div>  
+    
+    
+    <!-- footer -->
+    <footer class="flex items-center w-full bg-gray-100 pt-20" style="height: 450px; font-family: 'Rubik', sans-serif;" >
+        <div class="satu">
+            <div class="flex mb-5">
+                <figure class="ml-40 "><a href="#"><img src="/asset/img/coffee 1.png" alt=""></a></figure>
+                <figcaption class="ml-4 text-lg font-medium">Coffee Shop</figcaption>
+            </div>
+            <div class="flex mb-8 ml-40">
+                <p class="mr-96 pr-10">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
+            </div>
+            <div class="ml-40 text-yellow-800 mb-10">
+                <span class="mr-6"><a class="bg-yellow-400 px-3 py-2 w-10 rounded-full" href=""><i class="fab fa-facebook-f"></i></a></span>
+                <span class="mr-6"><a class="bg-yellow-400 px-2 py-2 w-10 rounded-full" href=""><i class="fab fa-twitter"></i></a></span>
+                <span class="mr-6"><a class="bg-yellow-400 px-3 py-2 w-10 rounded-full" href=""><i class="fab fa-instagram"></i></a></span>
+            </div>
+            <div class="ml-40 text-sm">©2020CoffeeStore</div>
+        </div>
+
+        <div class="dua mr-32">
+            <header class="mb-5 font-medium">Product</header>
+            <ul>
+                <li class="text-sm mb-4 text-thin"><a href="">Download</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Pricing</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Location</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Countries</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="tiga mr-10 w-64">
+            <header class="mb-5 font-medium">Engage</header>
+            <ul class="">
+                <li class="text-sm mb-4 text-thin"><a href="">FAQ</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Coffee Shop?</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">About Us</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Privacy Policy</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

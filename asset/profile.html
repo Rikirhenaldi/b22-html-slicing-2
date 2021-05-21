@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- tailwind -->
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- rubik -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+     <title>Profile</title>
+     <style>
+        .banner{
+            background: url(/asset/img/bprofile.png);
+            height: 1120px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .banner .user{
+            width: 90%;
+        }
+        .banner .rowbox1{
+            width: 90%;
+        }
+        .banner .title{
+            width: 750px;
+        }
+        .boxpict{
+           width: 310px;
+           height: 358px;
+           border-bottom: #6A4029 solid 14px;
+        }
+        .rowbox1 .boxpict .userName{
+            height: 210;
+        }
+        .boxcontact{
+            width: 802px;
+            height: 358px;
+            border-bottom: #6A4029 solid 14px;
+        }
+        .boxcontact .info{
+            width: 750px;
+            height: 300px;
+        }
+        .boxcontact .info .col1{
+            width: 300px;
+            height: 250px;
+            margin-right: 50px;
+        }
+        .boxcontact .info .col2{
+            width: 300px;
+            height: 250px;
+        }
+          /* rowbox 2 */
+          .boxcontact.edit{
+             width: 802px;
+             height: 418px;
+             border-bottom: #6A4029 solid 14px;
+         }
+         .confirmation{
+            width: 310px;
+            height: 418px;
+         }
+        </style>
+    
+</head>
+<body style="font-family: Rubik, sans-serif;">
+    <nav class="w-full h-32 flex justify-between border-b-2 ">
+        <span class="flex items-center">
+        <figure class="ml-40 "><a href="#"><img src="/asset/img/coffee 1.png" alt=""></a></figure>
+        <figcaption class="ml-4 text-lg font-bold">Coffee Shop</figcaption>
+        </span>
+        <ul class="flex justify-center items-center">
+            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a href="#">Home</a></li>
+            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="#">Product</a></li>
+            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="#">Your Cart</a></li>
+            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="#">History</a></li>
+        </ul>
+        <ul class="flex justify-center items-center">
+            <li class="flex justify-end font-medium text-3xl mr-8"><a href=""><i class="fas fa-search"></i></a></li>
+            <li class="flex  justify-end font-medium text-4xl rounded- mr-8"><a href=""><img class="w-8" src="/asset/img/chat (1) 1.png" alt=""></a></li>
+            <li class="flex mr-40 justify-end font-medium text-sm rounded-full mr-8"><a href=""><img class="rounded-full w-8" src="/asset/img/1fp.png" alt=""></a></li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <div class="banner flex flex-col items-center px-20">
+            <div class="user mt-20">
+                <h2 class="text-white font-medium text-4xl">User Profile</h2>
+            </div>
+            <!-- rowbox1 dimulai dari sini -->
+            <div class="rowbox1 flex flex-row mt-16">
+                <div class="boxpict mr-10 flex flex-col justify-center py-10 items-center bg-white rounded-xl">
+                    <div class="userName flex flex-col flex-1 text-center">
+                        <figure class="h-40">
+                                <img class="w-36 h-36 rounded-full" src="/asset/img/zulaikha.png" alt="">
+                                <div class="flex justify-center items-center text-center bg-yellow-900 w-10 h-10 rounded-full relative -top-10 left-24"><a href=""><i class="fas fa-pencil-alt text-white"></i></a></div>
+                        </figure>
+                        <div class="text-center">
+                            <h2 class="text-xl font-bold">Zulaikha</h2>
+                            <p class="text-xs text-gray-500">zulaikha17@gmail.com</p>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <h2 class="text-gray-500">Has been ordered 15 products</h2>
+                    </div>
+                </div>
+    
+                <div class="boxcontact bg-white flex flex-col rounded-xl border-yellow-900 items-center space-y-4">
+                    <div class="title flex flex-row justify-between mt-6 mx-6">
+                        <div class="text-3xl font-bold text-gray-500">Contact</div>
+                        <div class=" bg-yellow-900 w-10 h-10 flex justify-center items-center rounded-full" ><a href=""><i class="fas fa-pencil-alt text-white"></i></a></div>
+                    </div>
+                    <div class="info flex flex-row flex-wrap text-lg">
+                            <div class="col1 flex flex-col space-y-12">
+                                <div class="flex flex-col space-y-2">
+                                    <div class="text-gray-400">Email Adress</div>
+                                    <div class=" border-b-2 border-black text-xl">zulaikha@gmail.com</div>
+                                </div>
+                                <div class="flex flex-col space-y-2">
+                                    <div class="text-gray-400">Delivery Adress</div>
+                                    <div class=" border-b-2 border-black leading-5 text-lg">Iskandar Street no. 67 Block A Near Bus Stop</div>
+                                </div>
+                            </div>
+                            <div class="col2 flex flex-col space-y-2">
+                                <div class="text-gray-400">Mobilole Number</div>
+                                <div class=" border-b-2 border-black text-lg">(+62)813456782</div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+                    <!-- rowbox 2 dari sini -->
+        <div class="rowbox2 mt-14 ">
+            <div class="edit flex flex-row">      
+            <div class="boxcontact edit bg-white flex flex-col rounded-xl border-yellow-900 items-center mr-12 space-y-4">
+                <div class="title flex flex-row justify-between mt-6">
+                    <div class="text-3xl font-bold text-gray-500">Details</div>
+                    <div class=" bg-yellow-900 w-10 h-10 flex justify-center items-center rounded-full" ><a href=""><i class="fas fa-pencil-alt text-white"></i></a></div>
+                </div>
+                <div class="info flex flex-row flex-wrap text-lg">
+                        <div class="col1 flex flex-col space-y-9">
+                            <div class="flex flex-col space-y-2">
+                                <div class="text-gray-400">Display name :</div>
+                                <div class=" border-b-2 border-black">Zulaikha</div>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                                <div class="text-gray-400">First name :</div>
+                                <div class=" border-b-2 border-black leading-5">Zulaikha</div>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                                <div class="text-gray-400">Last name :</div>
+                                <div class=" border-b-2 border-black leading-5">Zulaikha</div>
+                            </div>
+                        </div>
+                        <div class="col2 flex flex-col space-y-9">
+                            <div class="flex flex-col space-y-2">
+                                <div class="text-gray-400">DD/MM/YY</div>
+                                <div class=" border-b-2 border-black">03/04/90</div>
+                            </div>
+                            <div class=" flex flex-col space-y-2">
+                                <div>
+                                    <input type="radio" name="gender" id="male">
+                                    <label class="text-gray-400" for="male">Male</label>
+                                </div>
+                                <div>
+                                    <input class="" type="radio" name="gender" id="female">
+                                    <label class="text-gray-400" for="female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="confirmation pt-3 items-center text-center space-y-6">
+                <div>
+                    <h2 class="text-white text-2xl font-bold">Do you want to save the change?</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class=" bg-yellow-900 text-xl h-16 flex justify-center items-center rounded-2xl text-white font-bold"><button>Save change</button></div>
+                    <div class=" bg-yellow-500 text-xl h-16 flex justify-center items-center rounded-2xl text-yellow-900 font-bold"><button>Cancel</button></div>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-white text-xl h-16 flex justify-center items-center rounded-2xl text-yellow-900">
+                        <button class="flex justify-between items-center w-full px-6 font-bold">
+                            <span>Edit password</span>
+                            <span>></span>
+                        </button>
+                    </div>
+                    <div class="bg-white text-xl h-16 flex justify-center items-center rounded-2xl text-yellow-900">
+                        <button class="flex justify-between items-center w-full px-6 font-bold">
+                            <span>Log out</span>
+                            <span>></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+</div>
+
+    <!-- footer -->
+    
+    <footer class="flex items-center w-full h-96 bg-gray-100">
+        <div class="satu">
+            <div class="flex mb-5">
+                <figure class="ml-40 "><a href="#"><img src="/asset/img/coffee 1.png" alt=""></a></figure>
+                <figcaption class="ml-4 text-lg font-medium">Coffee Shop</figcaption>
+            </div>
+            <div class="flex mb-8 ml-40">
+                <p class="mr-96 pr-10">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
+            </div>
+            <div class="ml-40 text-yellow-800 mb-10">
+                <span class="mr-6"><a class="bg-yellow-400 px-3 py-2 w-10 rounded-full" href=""><i class="fab fa-facebook-f"></i></a></span>
+                <span class="mr-6"><a class="bg-yellow-400 px-2 py-2 w-10 rounded-full" href=""><i class="fab fa-twitter"></i></a></span>
+                <span class="mr-6"><a class="bg-yellow-400 px-3 py-2 w-10 rounded-full" href=""><i class="fab fa-instagram"></i></a></span>
+            </div>
+            <div class="ml-40 text-sm">©2020CoffeeStore</div>
+        </div>
+
+        <div class="dua mr-32">
+            <header class="mb-5 font-medium">Product</header>
+            <ul>
+                <li class="text-sm mb-4 text-thin"><a href="">Download</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Pricing</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Location</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Countries</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="tiga mr-10 w-64">
+            <header class="mb-5 font-medium">Engage</header>
+            <ul class="">
+                <li class="text-sm mb-4 text-thin"><a href="">FAQ</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Coffee Shop?</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">About Us</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Privacy Policy</a></li>
+                <li class="text-sm mb-4 text-thin"><a href="">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
