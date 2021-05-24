@@ -11,6 +11,9 @@
     <!-- rubik -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/asset/css/style.css">
+
     <title>Product Customers</title>
 </head>
 <body style="font-family: rubik;">
@@ -20,15 +23,18 @@
         <figcaption class="ml-4 text-lg font-bold">Coffee Shop</figcaption>
         </span>
         <ul class="flex justify-center items-center">
-            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a href="#">Home</a></li>
-            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="#">Product</a></li>
-            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="#">Your Cart</a></li>
-            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="#">History</a></li>
+            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a href="Home.html">Home</a></li>
+            <li class="currentnav flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="productCust1.html">Product</a></li>
+            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="payment.html">Your Cart</a></li>
+            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="historyCust2.html">History</a></li>
         </ul>
         <ul class="flex justify-center items-center">
             <li class="flex justify-end font-medium text-3xl mr-8"><a href=""><i class="fas fa-search"></i></a></li>
-            <li class="flex  justify-end font-medium text-4xl rounded- mr-8"><a href=""><img class="w-8" src="/asset/img/chat (1) 1.png" alt=""></a></li>
-            <li class="flex mr-40 justify-end font-medium text-sm rounded-full mr-8"><a href=""><img class="rounded-full w-8" src="/asset/img/1fp.png" alt=""></a></li>
+            <li class="flex flex-row  justify-end font-medium text-4xl rounded- mr-8">
+                <a href=""><img class="w-8" src="/asset/img/chat (1) 1.png" alt=""></a>
+                <div class=" relative bottom-2 right-10 w-4 h-4 rounded-full bg-red-800 text-xs text-white flex justify-center items-center">1</div>
+            </li>
+            <li class="flex mr-40 justify-end font-medium text-sm rounded-full mr-8"><a href="profile.html"><img class="rounded-full w-8" src="/asset/img/1fp.png" alt=""></a></li>
         </ul>
     </nav>
 
@@ -81,11 +87,11 @@
         <div class="flex-1 space-y-12">
             <div class="navigasi mx-28 text-xl text-gray-400 mt-8">
                 <ul class="flex flex-row justify-between items-center text-center">
-                    <li class="" ><a class="hover:text-yellow-800" href="">Favorite Product</a></li>
-                    <li><a class="hover:text-yellow-800"  href="">Coffee</a></li>
-                    <li><a class="hover:text-yellow-800"  href="">Non Coffee</a></li>
-                    <li><a class="hover:text-yellow-800"  href="">Foods</a></li>
-                    <li><a class="hover:text-yellow-800"  href="">Adds-on</a></li>
+                    <li class="" ><a class="currentmenu hover:text-yellow-800" href="productCust1.html">Favorite Product</a></li>
+                    <li><a class="hover:text-yellow-800"  href="productCust1.coffee.html">Coffee</a></li>
+                    <li><a class="hover:text-yellow-800"  href="productCust.noncoffee.html">Non Coffee</a></li>
+                    <li><a class="hover:text-yellow-800"  href="productCust.foods.html">Foods</a></li>
+                    <li><a class="hover:text-yellow-800"  href="productCust.addon.html">Adds-on</a></li>
                 </ul>
             </div>
 

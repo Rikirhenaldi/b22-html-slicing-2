@@ -16,6 +16,8 @@
     <!-- poppins -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/asset/css/style.css">
     <style>
         body{
             font-family: Rubik, Poppins,sans-serif;
@@ -63,15 +65,15 @@
         <figcaption class="ml-4 text-lg font-bold">Coffee Shop</figcaption>
         </span>
         <ul class="flex justify-center items-center">
-            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a href="#">Home</a></li>
-            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="#">Product</a></li>
-            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="#">Your Cart</a></li>
-            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="#">History</a></li>
+            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a href="Home.html">Home</a></li>
+            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="productCust1.html">Product</a></li>
+            <li class="currentnav flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="payment.html">Your Cart</a></li>
+            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="historyCust2.html">History</a></li>
         </ul>
         <ul class="flex justify-center items-center">
             <li class="flex justify-end font-medium text-3xl mr-8"><a href=""><i class="fas fa-search"></i></a></li>
             <li class="flex  justify-end font-medium text-4xl rounded- mr-8"><a href=""><img class="w-8" src="/asset/img/chat (1) 1.png" alt=""></a></li>
-            <li class="flex mr-40 justify-end font-medium text-sm rounded-full mr-8"><a href=""><img class="rounded-full w-8" src="/asset/img/1fp.png" alt=""></a></li>
+            <li class="flex mr-40 justify-end font-medium text-sm rounded-full mr-8"><a href="profile.html"><img class="rounded-full w-8" src="/asset/img/1fp.png" alt=""></a></li>
         </ul>
     </nav>
     <div class="bannerpayment flex flex-col">
@@ -158,27 +160,27 @@
                     <div class="boxpaymethod flex flex-col px-8 pt-6">
                         <ul class="space-y-2">
                             <li class="flex flex-row h-10 border-b-2 items-center w-full">
-                                <input class="mr-2" type="radio" name="" id="">
-                                <div class="bg-red-400 w-10 h-8 flex justify-center items-center mr-2 rounded-lg"><i class="fas fa-credit-card text-white"></i></div>
+                                <input class="mr-2" type="radio" name="payment" id="card">
+                                <div class="bg-red-400 w-10 h-8 flex justify-center items-center mr-2 rounded-lg" for="card" ><i class="fas fa-credit-card text-white"></i></div>
                                 <div>Card</div>
                             </li>
                             <li class="flex flex-row h-10 border-b-2 items-center w-full">
-                                <input class="mr-2" type="radio" name="" id="">
-                                <div class="bg-yellow-900 w-10 h-8 flex justify-center items-center mr-2 rounded-lg"><i class="fas fa-university text-white"></i></div>
+                                <input class="mr-2" type="radio" name="payment" id="Bank">
+                                <div class="bg-yellow-900 w-10 h-8 flex justify-center items-center mr-2 rounded-lg"for="Bank"><i class="fas fa-university text-white"></i></div>
                                 <div>Bank Account</div>
                             </li>
                             <li class="flex flex-row h-10 items-center w-full">
-                                <input class=" mr-2" type="radio" name="" id="">
-                                <div class="bg-yellow-400 w-10 h-8 flex justify-center items-center mr-2 rounded-lg mr-2"><i class="fas fa-truck"></i></div>
+                                <input class=" mr-2" type="radio" name="payment" id="cod">
+                                <div class="bg-yellow-400 w-10 h-8 flex justify-center items-center mr-2 rounded-lg mr-2" for="cod"><i class="fas fa-truck"></i></div>
                                 <div>Cash on Delivery</div>
                             </li>
 
                         </ul>
                     </div>
                 </div>
-                <div class="confirmpay bg-yellow-900 flex justify-center items-center mt-16">
-                    <button class="text-white font-bold">Confirm and Pay</button>
-                </div>
+                <button class="confirmpay bg-yellow-900 flex justify-center items-center mt-16">
+                    <div class="text-white font-bold">Confirm and Pay</div>
+                </button>
             </div>
             <!-- akhir boxmiddle right -->
         </div>

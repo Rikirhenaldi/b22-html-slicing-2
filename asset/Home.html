@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
     <!-- tailwind -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <!-- font awesome -->
@@ -12,45 +13,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <title>Home</title>
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <style>
+        .bannerhome{
+            background: url(/asset/img/nathan-dumlao-71u2fOofI-U-unsplash\ 2.png);
+            height: 640px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .bannerhome .titlebox{
+            width: 600px;
+        }
+        .boxinfo{
+            width: 1200px;
+        }
+        section .cardBox .cardBox1:hover{
+            border: #6A4029 solid 4px;
+        }
+        .bannerhome input.search:focus{
+            border: hidden;
+            outline: none;
+        }
+    </style>
 </head>
-<body style="font-family: rubik;">
+<body style="font-family: Rubik;">
     <nav class="w-full h-32 flex justify-between ">
         <span class="flex items-center">
         <figure class="ml-40 "><a href="#"><img src="/asset/img/coffee 1.png" alt=""></a></figure>
         <figcaption class="ml-4 text-lg font-bold">Coffee Shop</figcaption>
         </span>
         <ul class="flex justify-center items-center">
-            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a href="Home.html">Home</a></li>
+            <li class="currentnav flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a href="Home.html">Home</a></li>
             <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="productCust1.html">Product</a></li>
-            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="#">Your Cart</a></li>
+            <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="payment.html">Your Cart</a></li>
             <li class="flex ml-10 justify-center align-middle text-sm hover:text-yellow-800"><a class="" href="historyCust2.html">History</a></li>
         </ul>
         <ul class="flex justify-center items-center">
-            <li class="flex mr-2 justify-end font-medium text-sm hover:bg-yellow-500 py-2 px-8 rounded-full"><a href="">Login</a></li>
-            <li class="flex mr-40 justify-end font-medium text-sm hover:bg-yellow-500 py-2 px-8 rounded-full"><a href="">Sign Up</a></li>
+            <li class="flex mr-2 justify-end font-medium text-sm hover:bg-yellow-400 py-2 px-8 rounded-full"><a href="login.html">Login</a></li>
+            <li class="flex mr-40 justify-end font-medium text-sm bg-yellow-400 py-2 px-8 rounded-full"><a href="signup.html">Sign Up</a></li>
         </ul>
     </nav>
-    <section class=""> 
-        <figure class="w-full h-20 bg-clip-border z-0">
-            <img class="w-full h-auto bg-clip-border" src="/asset/img/nathan-dumlao-71u2fOofI-U-unsplash 2.png" alt=""></figure>
-        <main class="relative">
-            <header class="ml-40 mb-5 text-5xl text-white font-bold">
-                Start Your Day with
-            </header>
-            <header class="ml-40 mb-10 text-5xl text-white font-bold">
-                Cofee and Good Meals
-            </header>
-            <p class="ml-20 mb-10 text-lg text-white font-medium max-w-2xl px-20">We provide high quality beans, good taste, and healthy meals made by love just for you. Start your day with us for a bigger smile!</p>
-            <button class="ml-40 text-sm text-black font-medium bg-yellow-500 px-14 py-3 rounded-md" style="box-shadow: 0px 4px 4px 4px rgba(255, 186, 51,0.1);">Get Started</button>
-        </main>
-        <div class="search">
-            <input class="absolute top-36 right-48 w-64 h-14 rounded-full text-center font-bold" type="search" name="" id="" placeholder="Search">
-
-            <button class="absolute top-36 right-96 font-bold text-2xl h-14 rounded-full text-center font-medium">&#128269</button>
+    <div class="bannerhome flex flex-col">
+        <div class="row1 flex flex-row">
+            <div class="titlebox flex flex-col text-white font-medium ml-40 space-y-10 mt-20">
+                <h2 class="text-5xl font-bold">Start Your Day with Coffee and Good Meals</h2>
+                <p class="text-xl text-white font-medium mr-14">We provide high quality beans, good taste, and healthy meals made by love just for you. Start your day with us for a bigger smile!</p>
+                <a href="signup.html"><button class="font-extrabold text-yellow-900 bg-yellow-400 rounded-md w-60 h-14" style="box-shadow: 0px 4px 4px 4px rgba(255, 186, 51,0.1);">Get Started</button></a>
+            </div>
+            <div class="flex flex-row text-xl mt-6 ml-64 relative">
+                <input class="search w-72 h-12 rounded-full flex justify-center pl-16 relative" type="search" name="" id="" placeholder="Search">
+                <a href=""><i class="fas fa-search text-gray-500 text-2xl absolute top-4 left-6"></i></a>
+            </div>
         </div>
-    </section>
-        <div class="box relative flex w-9/12 h-52 m-auto mt-28 rounded-xl justify-between items-center  bg-white shadow-xl px-24 text-xl">
+    </div>
+        <!--box relative darisini  -->
+    <div class="boxinfo relative flex h-52 m-auto -top-24 rounded-xl justify-between items-center bg-white shadow-xl px-24 text-xl">
             <div class="box1 flex flex-row border-r-2 pr-28 justify-center items-center">
                 <div class="flex justify-center items-center bg-yellow-400 w-16 h-16 rounded-full">
                     <i class="fas fa-user"></i>
@@ -95,7 +114,7 @@
         </div>
     </section>
 
-    <section class="relativ mt-28 bg-gray-100 w-full pt-24 pb-20">
+    <section class="mt-28 bg-gray-100 w-full pt-24 pb-20">
 
         <header class="text-center text-4xl font-medium mb-8 ">Here is People’s Favorite</header>
         <p class="text-center text-lg">Let’s choose and have a bit taste of poeple’s favorite. It might be yours too!</p>
@@ -171,11 +190,58 @@
     <section class="pt-24">
         <header class="text-center text-4xl font-medium mb-8 mx-80 px-28">Visit Our Store in the Spot on the Map Below</header>
         <p class="text-center text-lg mb-12 mx-80 px-28">See our store in every city on the spot and spen your good day there. See you soon!</p>
-        <figure><img class="relative m-auto" src="/asset/img/Vector.png" alt=""></figure>
+        <div class=" relative flex justify-center">
+            <img class="m-auto" src="/asset/img/Vector.png" alt="">
+            <div class="font-extrabold text-yellow-900 w-10/12 h-full m-auto absolute top-0 flex flex-row justify-between">
+                <div class=" w-6/12 h-full relative font-extrabold ">
+                    <!-- atas kiri -->
+                <i class="far fa-dot-circle text-sm absolute top-24 left-32"></i>
+                <i class="far fa-dot-circle text-xl absolute top-20 left-48"></i>
+                <i class="far fa-dot-circle text-xl absolute top-24 left-64"></i>
+                <i class="far fa-dot-circle text-4xl absolute top-40 left-60"></i>
+                <i class="far fa-dot-circle text-sm absolute top-64 left-72"></i>
+                <i class="far fa-dot-circle text-xl absolute top-52 right-72"></i>
+                <i class="far fa-dot-circle text-xl absolute top-36 right-56"></i>
+                <i class="far fa-dot-circle text-sm absolute top-1 right-64"></i>
+                <i class="far fa-dot-circle text-xl absolute top-8 right-40"></i>
+                <i class="far fa-dot-circle text-sm absolute top-6 right-20"></i>
+                <i class="far fa-dot-circle text-sm absolute top-24 right-40"></i>
+                <!-- bawah kiri -->
+                <i class="far fa-dot-circle text-xl absolute bottom-20 right-52"></i>
+                <i class="far fa-dot-circle text-3xl absolute bottom-36 right-44"></i>
+                <i class="far fa-dot-circle text-sm absolute bottom-40 right-36"></i>
+                <i class="far fa-dot-circle text-xl absolute bottom-52 right-56"></i>
+                 <!-- bawah kanan ada satu disini -->
+                 <i class="far fa-dot-circle text-xl absolute bottom-64 right-6"></i>
+             
+                </div>
+                <div class="w-6/12 h-full relative">
+                    <!-- atas kanan -->
+                    <i class="far fa-dot-circle text-xl absolute top-28 left-2"></i>
+                    <i class="far fa-dot-circle text-2xl absolute top-44 left-6"></i>
+                    <i class="far fa-dot-circle text-3xl absolute top-24 left-28"></i>
+                    <i class="far fa-dot-circle text-sm absolute top-20 left-48"></i>
+                    <i class="far fa-dot-circle text-4xl absolute top-32 left-52"></i>
+                    <i class="far fa-dot-circle text-sm absolute top-24 right-56"></i>
+                    <i class="far fa-dot-circle text-sm absolute top-20 right-32"></i>
+                    <i class="far fa-dot-circle text-xl absolute top-52 left-64"></i>
+                    <i class="far fa-dot-circle text-2xl absolute top-64 left-48"></i>
+                    <!-- bawah kanan -->
+                    <i class="far fa-dot-circle text-2xl absolute bottom-28 left-8"></i>
+                    <i class="far fa-dot-circle text-4xl absolute bottom-56 left-10"></i>
+                    <i class="far fa-dot-circle text-3xl absolute bottom-24 right-64"></i>
+                    <i class="far fa-dot-circle text-sm absolute bottom-20 right-56"></i>
+                    <i class="far fa-dot-circle text-xl absolute bottom-40 left-72"></i>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
     </section>
 
     <section class="">
-        <header class="text-center text-4xl font-medium mb-8 mx-80 px-28 mb-28">Our Partner</header>
+        <header class="text-center text-4xl font-medium mb-8 mx-80 px-28 mb-20">Our Partner</header>
         <ul class="flex mx-20 flex justify-center items-center mb-28">
             <li class=" mx-20"><a class="text-6xl text-gray-400" href=""><i class="fab fa-youtube"></i></a></li>
             <li class=" mx-20"><a class="text-6xl text-gray-400" href=""><i class="fab fa-twitter-square"></i></a></li>
@@ -185,56 +251,113 @@
         </ul>
     </section>
     
-    <section class="mt-28 mb-20">
+    <section class="mt-28">
         <header class="text-center text-4xl font-medium mb-8 mx-80 px-28">Loved by Thousands of Happy Customer</header>
-        <p class="text-center text-lg mb-12 mx-80 px-28">These are the stories of our customers who have visited us with great pleasure.</p> 
+        <p class="text-center text-lg mb-12 mx-80 px-28">These are the stories of our customers who have visited us with great pleasure.</p>
 
-        <div class="box flex relative text-xs">
-
-        <div class="cardBox w-80 h-auto border-4 ml-16 rounded-xl" style="width: 500px; height: 200px;">
-            <div class="title flex px-4 py-4">
-                <figure class="relative -right-4 top-2"><img src="/asset/img/1p.png" alt=""></figure>
-                <header>
-                    <ul class="mx-8 text-sm relative -right-2 top-3">
-                        <li class="font-bold">Viezh Robert</li>
-                        <li class="">Warsaw, Poland</li>
-                    </ul>
-                </header>
-                <header class="text-lg relative -right-16 top-3 ">4.5 <i class="fas fa-star text-yellow-400 "></i></header>
-            </div>
-            <p class="flex px-4 py-4 text-sm ">“Wow... I am very happy to spend my whole day here. the Wi-fi is good, and the coffee and meals tho. I like it here!! Very recommended!</p>
-        </div>
-
-        <div class="cardBox w-80 h-auto border-4 ml-16 rounded-xl" style="width: 500px; height: 200px;">
-            <div class="title flex px-4 py-4">
-                <figure class="relative -right-4 top-2"><img src="/asset/img/2p.png" alt=""></figure>
-                <header>
-                    <ul class="mx-8 text-sm relative -right-2 top-3">
-                        <li class="font-bold">Yessica Christy</li>
-                        <li class="">Shanxi, China</li>
-                    </ul>
-                </header>
-                <header class="text-lg relative -right-16 top-3">4.5 <i class="fas fa-star text-yellow-400 "></i></header>
-            </div>
-            <p class="flex px-4 py-4 text-sm ">“I like it because I like to travel far and still can make my day better just by drinking their Hazelnut Latte</p>
-        </div>
-
-        <div class="cardBox w-80 h-auto border-l-4 border-b-4 border-t-4 ml-16 rounded-xl" style="width: 500px; height: 200px;">
-            <div class="title flex px-4 py-4">
-                <figure class="relative -right-4 top-2"><img src="/asset/img/3p.png" alt=""></figure>
-                <header>
-                    <ul class="mx-8 text-sm relative -right-2 top-3">
-                        <li class="font-bold">Kim Young Jou</li>
-                        <li class="">Seoul, South Korea</li>
-                    </ul>
-                </header>
-                <header class="text-lg relative -right-20 top-3">4.5 <i class="fas fa-star text-yellow-400 "></i></header>
-            </div>
-            <p class="flex px-4 py-4 text-sm ">“This is very unusual for my taste, I haven’t liked coffee before but their coffee is the best! and yup, you have to order the chicken wings, the best in town!</p>
+        <div class="slide wraper overflow-x-hidden" style="width:;">
+            <div class="slider p-14" style="width: 100vw; height: auto; overflow-x: scroll;">
+                <div class="boxwarp flex flex-row space-x-10" style=" height: 250px;">
+                    <div class="border-yellow-900 border-2 rounded-xl flex flex-col pt-6 pl-4 space-y-4 " style="width: 400px; height: 230px;">
+                        <div class="username flex flex-row justify-between items-center">
+                            <div class=" flex justify-center items-center">
+                                <img src="/asset/img/1p.png" alt="">
+                            </div>
+                            <div class="flex flex-col justify-center pl-4" style="width: 200px;">
+                                <div class="font-bold text-xl">Viezh Robert</div>
+                                <div>Warsaw, Poland</div>
+                            </div>
+                            <div class="flex flex-1 flex-row space-x-4 justify-center items-center" >
+                                <div class="text-xl">4.5</div> 
+                                <i class="fas fa-star text-yellow-400 "></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="flex px-6 text-sm leading-8" style="width: 400px; ">“Wow... I am very happy to spend my whole day here. the Wi-fi is good, and the coffee and meals tho. I like it here!! Very recommended!</p>        
+                        </div>
+                    </div>
+        
+                    <div class="border-yellow-900 border-2 rounded-xl flex flex-col pt-6 pl-4 space-y-4 " style="width: 400px;height: 230px;">
+                        <div class="username flex flex-row justify-between items-center">
+                            <div class=" flex justify-center items-center">
+                                <img src="/asset/img/2p.png" alt="">
+                            </div>
+                            <div class="flex flex-col justify-center pl-4" style="width: 200px;">
+                                <div class="font-bold text-xl">Yessica Christy</div>
+                                <div>Shanxi, China</div>
+                            </div>
+                            <div class="flex flex-1 flex-row space-x-4 justify-center items-center" >
+                                <div class="text-xl">4.5</div> 
+                                <i class="fas fa-star text-yellow-400 "></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="flex px-6  text-sm leading-8" style="width: 400px; ">““I like it because I like to travel far and still can make my day better just by drinking their Hazelnut Latte</p>        
+                        </div>
+                    </div>
+        
+                    
+                    <div class="border-yellow-900 border-2 rounded-xl flex flex-col pt-6 pl-4 space-y-4 " style="width: 400px;height: 230px;">
+                        <div class="username flex flex-row justify-between items-center">
+                            <div class=" flex justify-center items-center">
+                                <img src="/asset/img/3p.png" alt="">
+                            </div>
+                            <div class="flex flex-col justify-center pl-4" style="width: 200px;">
+                                <div class="font-bold text-xl">Kim Young Jou</div>
+                                <div>Seoul, South Korea</div>
+                            </div>
+                            <div class="flex flex-1 flex-row space-x-4 justify-center items-center" >
+                                <div class="text-xl">4.5</div> 
+                                <i class="fas fa-star text-yellow-400 "></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="flex px-6 text-sm leading-8 w-full" style="width: 400px; ">““This is very unusual for my taste, I haven’t liked coffee before but their coffee is the best! and yup, you have to order the chicken wings, the best in town!</p>        
+                        </div>
+                    </div>
+    
+                    <div class="border-yellow-900 border-2 rounded-xl flex flex-col pt-6 pl-4 space-y-4 " style="width: 400px;height: 230px;">
+                        <div class="username flex flex-row justify-between items-center">
+                            <div class=" flex justify-center items-center">
+                                <img src="/asset/img/1p.png" alt="">
+                            </div>
+                            <div class="flex flex-col justify-center pl-4" style="width: 200px;">
+                                <div class="font-bold text-xl">Viezh Robert</div>
+                                <div>Warsaw, Poland</div>
+                            </div>
+                            <div class="flex flex-1 flex-row space-x-4 justify-center items-center" >
+                                <div class="text-xl">4.5</div> 
+                                <i class="fas fa-star text-yellow-400 "></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="flex px-6 text-sm leading-8 w-full" style="width: 400px; ">“Wow... I am very happy to spend my whole day here. the Wi-fi is good, and the coffee and meals tho. I like it here!! Very recommended!</p>        
+                        </div>
+                    </div>
+                    
+                    <div class="border-yellow-900 border-2 rounded-xl flex flex-col pt-6 pl-4 space-y-4 " style="width: 400px;height: 230px;">
+                        <div class="username flex flex-row justify-between items-center">
+                            <div class=" flex justify-center items-center">
+                                <img src="/asset/img/1p.png" alt="">
+                            </div>
+                            <div class="flex flex-col justify-center pl-4" style="width: 200px;">
+                                <div class="font-bold text-xl">Viezh Robert</div>
+                                <div>Warsaw, Poland</div>
+                            </div>
+                            <div class="flex flex-1 flex-row space-x-4 justify-center items-center" >
+                                <div class="text-xl">4.5</div> 
+                                <i class="fas fa-star text-yellow-400 "></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="flex px-6 text-sm py-6 leading-8 w-full" style="width: 400px; ">“Wow... I am very happy to spend my whole day here. the Wi-fi is good, and the coffee and meals tho. I like it here!! Very recommended!</p>        
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </div>
         
-    </div>
-    <div class="flex justify-between mt-20 ">
+    <div class="flex justify-between mt-20 w-full h-40 bg-white flex justify-center items-center relative bottom-28">
         <div class=" mt-5">
             <ul class="flex">
                 <li class="ml-28 mr-5"><button class=""><i class="fas fa-circle hover:text-yellow-800"></i></button></li>
@@ -253,8 +376,8 @@
     </section>
 
 
-    <section>
-        <div class="box relative top-16 w-9/12 m-auto h-52 bg-white flex justify-between items-center m-auto shadow-xl">
+    <section class="h-10">
+        <div class="box relative -top-20 w-9/12 m-auto h-52 bg-white flex justify-between items-center m-auto shadow-xl">
             <div class="flex flex-col ml-20 pr-80 ">
                 <header class="font-medium text-4xl mb-3">Cek our promo today!</header>
                 <p class="font-sm">Let's see the deals and pick yours!</p>
